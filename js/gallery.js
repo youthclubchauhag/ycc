@@ -3,18 +3,26 @@
 ========================================================= */
 
 const GALLERY_DATA = [
-  { src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=900&auto=format&fit=crop", caption: "Youth club meeting at the community hall" },
-  { src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=900&auto=format&fit=crop", caption: "Community event and cultural gathering" },
-  { src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=900&auto=format&fit=crop", caption: "Sports activity in the village" },
-  { src: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=900&auto=format&fit=crop", caption: "Village cleanliness drive" },
-  { src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=900&auto=format&fit=crop", caption: "Nature and hillside landscape" },
-  { src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=900&auto=format&fit=crop", caption: "Blood donation camp support" },
-  { src: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900&auto=format&fit=crop", caption: "Tree plantation drive" },
-  { src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=900&auto=format&fit=crop", caption: "Education support session" },
-  { src: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=900&auto=format&fit=crop", caption: "Social work and helping hands" },
-  { src: "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=900&auto=format&fit=crop", caption: "Community gathering and teamwork" },
-  { src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=900&auto=format&fit=crop", caption: "Village program in action" },
-  { src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=900&auto=format&fit=crop", caption: "Youth participation in local activities" },
+  { src: "im/1.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/2.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/3.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/4.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/5.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/6.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/7.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/8.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/9.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/10.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/11.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/12.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/13.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/14.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/15.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/16.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/17.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/18.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/19.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
+  { src: "im/20.jpeg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
 ];
 
 function renderGallery(){
