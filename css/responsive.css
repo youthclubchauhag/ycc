@@ -1,0 +1,44 @@
+/* =========================================================
+   RESPONSIVE REFINEMENTS
+   Tailwind utility classes handle most breakpoints in-markup;
+   this file covers the custom component classes in style.css
+   that need fine-tuning across devices.
+========================================================= */
+
+/* ---- Large monitors : keep hero type from ballooning ---- */
+@media(min-width:1600px){
+  .container-xl{ max-width:1400px; }
+}
+
+/* ---- Tablet / iPad ---- */
+@media(max-width:1023px){
+  .hero-title{ font-size:clamp(2.2rem, 5.4vw, 3.6rem); }
+  .stat-ring, .stat-ring svg{ width:120px; height:120px; }
+}
+
+/* ---- Mobile phones ---- */
+@media(max-width:640px){
+  .section-pad{ padding-top:64px; padding-bottom:64px; }
+  .btn{ padding:14px 26px; font-size:14px; width:100%; }
+  .btn.btn-inline{ width:auto; }
+  .team-photo{ width:96px; height:96px; }
+  .ring-divider{ height:80px; }
+  .ring-divider svg{ width:150px; height:150px; }
+  #toast{ left:14px; right:14px; max-width:none; top:auto; bottom:20px; transform:translateY(140px); }
+  #toast.show{ transform:translateY(0); }
+}
+
+/* ---- Prevent any accidental horizontal scroll ---- */
+html, body{ max-width:100%; overflow-x:hidden; }
+img, svg{ max-width:100%; }
+
+/* ---- Small phones: nav menu full width ---- */
+@media(max-width:480px){
+  .hero-title{ font-size:clamp(1.9rem, 8vw, 2.6rem); }
+  .mobile-menu{ width:100%; }
+}
+
+/* ---- Reduced motion accessibility ---- */
+@media(prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}
