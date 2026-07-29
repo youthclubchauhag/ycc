@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="im/logo.png" type="image/png">
+<title>Gallery | Youth Club Chauhag</title>
+<meta name="description" content="Photo gallery of Youth Club Chauhag activities: meetings, events, sports, blood donation, tree plantation and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins','sans-serif'], sans: ['Inter','sans-serif'] }}}}</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="font-sans">
+
+<div id="loader"><div class="loader-rings"><span></span><span></span><span></span></div></div>
+
+<header id="site-nav">
+  <div class="container-xl flex items-center justify-between py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="im/logo.png" alt="Youth Club Chauhag Logo" class="w-14 h-14 object-contain rounded-full bg-white/90 p-1 shadow-sm">
+      <span class="text-white font-display font-bold text-lg leading-tight">Youth Club<br><span class="text-xs font-medium tracking-wide text-white/70">CHAUHAG</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="volunteer.html" class="nav-link">Volunteer</a>
+      <a href="help.html" class="nav-link">Get Help</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="volunteer.html" class="btn btn-gold hidden lg:inline-flex !py-3 !px-6 text-sm">Join Our Club</a>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden flex-col bg-[var(--forest)] px-6 pb-6 gap-1 mobile-menu">
+    <a href="index.html" class="mobile-link nav-link py-2">Home</a>
+    <a href="about.html" class="mobile-link nav-link py-2">About</a>
+    <a href="team.html" class="mobile-link nav-link py-2">Team</a>
+    <a href="events.html" class="mobile-link nav-link py-2">Events</a>
+    <a href="gallery.html" class="mobile-link nav-link py-2 active">Gallery</a>
+    <a href="volunteer.html" class="mobile-link nav-link py-2">Volunteer</a>
+    <a href="help.html" class="mobile-link nav-link py-2">Get Help</a>
+    <a href="contact.html" class="mobile-link nav-link py-2">Contact</a>
+  </div>
+</header>
+
+<section class="pt-40 pb-20" style="background:linear-gradient(160deg,var(--forest), #0A2A20);">
+  <div class="container-xl text-center">
+    <span class="eyebrow justify-center" style="color:var(--leaf)">Moments Captured</span>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-white mt-4">Photo Gallery</h1>
+    <p class="text-white/70 max-w-xl mx-auto mt-4">Browse our activities by category, or view them all.</p>
+  </div>
+</section>
+
+<section class="section-pad bg-white">
+  <div class="container-xl mb-10 text-center" data-aos="fade-up">
+    <p class="text-muted">A glimpse of our work, programs and community moments.</p>
+  </div>
+  <div class="container-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="galleryGrid"></div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button id="lightboxClose" class="absolute top-6 right-6 text-white text-3xl z-10"><i class="fa-solid fa-xmark"></i></button>
+  <button id="lightboxPrev" class="absolute left-4 md:left-10 text-white text-3xl z-10"><i class="fa-solid fa-chevron-left"></i></button>
+  <button id="lightboxNext" class="absolute right-4 md:right-10 text-white text-3xl z-10"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="max-w-4xl w-full px-6 text-center">
+    <img id="lightboxImg" src="" alt="" class="max-h-[75vh] mx-auto rounded-xl object-contain">
+    <p id="lightboxCaption" class="text-white/80 text-sm mt-4"></p>
+  </div>
+</div>
+
+<footer class="pt-20 pb-8">
+  <div class="container-xl grid md:grid-cols-4 gap-12">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-11 h-11 rounded-full bg-[var(--gold)] flex items-center justify-center font-display font-bold text-[var(--forest)]">YC</span>
+        <span class="text-white font-display font-bold">Youth Club Chauhag</span>
+      </div>
+      <p class="text-sm leading-relaxed">A volunteer youth organisation serving Village Chauhag and neighbouring communities in Shimla, Himachal Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="events.html">Events</a></li><li><a href="gallery.html">Gallery</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Get Involved</h4>
+      <ul class="space-y-2 text-sm"><li><a href="volunteer.html">Volunteer Registration</a></li><li><a href="help.html">Request Help</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm"><li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-[var(--gold)]"></i>Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh - 171211, India</li><li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-[var(--gold)]"></i>chauhagyouths@gmail.com</li></ul>
+    </div>
+  </div>
+  <div class="container-xl border-t border-white/10 mt-14 pt-6 text-xs text-white/50 flex flex-wrap justify-between gap-3">
+    <p>&copy; <span class="current-year"></span> Youth Club Chauhag. All rights reserved.</p>
+    <p>Together We Serve, Together We Grow.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast" role="status"><div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-0.5"></i><p id="toast-msg" class="text-sm text-[var(--charcoal)] font-medium"></p><button id="toast-close" class="ml-auto text-muted"><i class="fa-solid fa-xmark"></i></button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
