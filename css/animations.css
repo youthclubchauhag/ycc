@@ -1,0 +1,61 @@
+/* =========================================================
+   ANIMATION LIBRARY
+   Keyframes referenced by script.js / animations.js and by
+   AOS-independent custom transitions (loader, ripple, modals).
+========================================================= */
+
+@keyframes fadeUp{
+  from{ opacity:0; transform:translateY(28px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+@keyframes fadeIn{
+  from{ opacity:0; } to{ opacity:1; }
+}
+@keyframes zoomIn{
+  from{ opacity:0; transform:scale(.92); } to{ opacity:1; transform:scale(1); }
+}
+@keyframes slideInRight{
+  from{ opacity:0; transform:translateX(40px); } to{ opacity:1; transform:translateX(0); }
+}
+@keyframes floatY{
+  0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-14px); }
+}
+@keyframes pulseSoft{
+  0%,100%{ box-shadow:0 0 0 0 rgba(201,150,46,.45); } 50%{ box-shadow:0 0 0 14px rgba(201,150,46,0); }
+}
+@keyframes marquee{
+  from{ transform:translateX(0); } to{ transform:translateX(-50%); }
+}
+@keyframes drawLine{
+  from{ stroke-dashoffset:1000; } to{ stroke-dashoffset:0; }
+}
+
+.anim-float{ animation:floatY 5s ease-in-out infinite; }
+.anim-pulse{ animation:pulseSoft 2.4s ease-in-out infinite; }
+.marquee-track{ animation:marquee 28s linear infinite; }
+.marquee-track:hover{ animation-play-state:paused; }
+
+/* modal / popup transitions */
+.modal-overlay{
+  position:fixed; inset:0; background:rgba(9,30,22,.72); backdrop-filter:blur(4px);
+  z-index:300; display:flex; align-items:center; justify-content:center; padding:20px;
+  opacity:0; visibility:hidden; transition:opacity .35s ease, visibility .35s ease;
+}
+.modal-overlay.open{ opacity:1; visibility:visible; }
+.modal-box{
+  transform:translateY(24px) scale(.97); opacity:0; transition:all .4s cubic-bezier(.2,.8,.2,1);
+}
+.modal-overlay.open .modal-box{ transform:translateY(0) scale(1); opacity:1; }
+
+/* lightbox */
+#lightbox{
+  position:fixed; inset:0; background:rgba(6,20,15,.95); z-index:400;
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transition:opacity .4s ease, visibility .4s ease;
+}
+#lightbox.open{ opacity:1; visibility:visible; }
+#lightbox img{ animation:zoomIn .4s ease; }
+
+/* generic scroll-reveal fallback (if AOS not yet loaded) */
+[data-reveal]{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+[data-reveal].revealed{ opacity:1; transform:translateY(0); }
