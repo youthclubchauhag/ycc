@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="im/logo.png" type="image/png">
+<title>Events | Youth Club Chauhag</title>
+<meta name="description" content="Upcoming and past events organised by Youth Club Chauhag.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins','sans-serif'], sans: ['Inter','sans-serif'] }}}}</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="font-sans">
+
+<div id="loader"><div class="loader-rings"><span></span><span></span><span></span></div></div>
+
+<header id="site-nav">
+  <div class="container-xl flex items-center justify-between py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="im/logo.png" alt="Youth Club Chauhag Logo" class="w-14 h-14 object-contain rounded-full bg-white/90 p-1 shadow-sm">
+      <span class="text-white font-display font-bold text-lg leading-tight">Youth Club<br><span class="text-xs font-medium tracking-wide text-white/70">CHAUHAG</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="events.html" class="nav-link active">Events</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="volunteer.html" class="nav-link">Volunteer</a>
+      <a href="help.html" class="nav-link">Get Help</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="volunteer.html" class="btn btn-gold hidden lg:inline-flex !py-3 !px-6 text-sm">Join Our Club</a>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden flex-col bg-[var(--forest)] px-6 pb-6 gap-1 mobile-menu">
+    <a href="index.html" class="mobile-link nav-link py-2">Home</a>
+    <a href="about.html" class="mobile-link nav-link py-2">About</a>
+    <a href="team.html" class="mobile-link nav-link py-2">Team</a>
+    <a href="events.html" class="mobile-link nav-link py-2 active">Events</a>
+    <a href="gallery.html" class="mobile-link nav-link py-2">Gallery</a>
+    <a href="volunteer.html" class="mobile-link nav-link py-2">Volunteer</a>
+    <a href="help.html" class="mobile-link nav-link py-2">Get Help</a>
+    <a href="contact.html" class="mobile-link nav-link py-2">Contact</a>
+  </div>
+</header>
+
+<section class="pt-40 pb-20" style="background:linear-gradient(160deg,var(--forest), #0A2A20);">
+  <div class="container-xl text-center">
+    <span class="eyebrow justify-center" style="color:var(--leaf)">What's Happening</span>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-white mt-4">Events</h1>
+    <p class="text-white/70 max-w-xl mx-auto mt-4">Join us at our upcoming activities, or look back at what we've run so far.</p>
+  </div>
+</section>
+
+<!-- Upcoming -->
+<section class="section-pad bg-white">
+  <div class="container-xl mb-14" data-aos="fade-up">
+    <span class="eyebrow">Upcoming</span>
+    <h2 class="font-display text-3xl font-bold text-[var(--forest)] mt-3">Upcoming Events</h2>
+  </div>
+  <div class="container-xl grid md:grid-cols-3 gap-7 stagger-grid">
+    <div class="card overflow-hidden">
+      <div class="h-48 relative"><img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover" alt="Blood donation camp"><span class="absolute top-4 left-4 bg-[var(--gold)] text-[var(--forest)] text-xs font-bold px-3 py-1.5 rounded-full">15 AUG</span></div>
+      <div class="p-6"><h3 class="font-display font-bold text-lg text-[var(--forest)]">Independence Day Blood Donation Camp</h3><p class="text-sm text-muted mt-2">Community hall, Village Chauhag · 9:00 AM onward</p><a href="volunteer.html" class="btn btn-outline mt-5 !py-2.5 !px-6 text-sm">Register to Help</a></div>
+    </div>
+    <div class="card overflow-hidden">
+      <div class="h-48 relative"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover" alt="Tree plantation drive"><span class="absolute top-4 left-4 bg-[var(--gold)] text-[var(--forest)] text-xs font-bold px-3 py-1.5 rounded-full">02 SEP</span></div>
+      <div class="p-6"><h3 class="font-display font-bold text-lg text-[var(--forest)]">Monsoon Tree Plantation Drive</h3><p class="text-sm text-muted mt-2">School road, Chauhag · 7:30 AM onward</p><a href="volunteer.html" class="btn btn-outline mt-5 !py-2.5 !px-6 text-sm">Register to Help</a></div>
+    </div>
+    <div class="card overflow-hidden">
+      <div class="h-48 relative"><img src="https://images.unsplash.com/photo-1547483238-2cbf881a559f?q=80&w=700&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cultural evening"><span class="absolute top-4 left-4 bg-[var(--gold)] text-[var(--forest)] text-xs font-bold px-3 py-1.5 rounded-full">20 SEP</span></div>
+      <div class="p-6"><h3 class="font-display font-bold text-lg text-[var(--forest)]">Harvest Cultural Evening</h3><p class="text-sm text-muted mt-2">Village ground, Chauhag · 5:00 PM onward</p><a href="volunteer.html" class="btn btn-outline mt-5 !py-2.5 !px-6 text-sm">Register to Help</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Past -->
+<section class="section-pad bg-[var(--leaf-mist)]">
+  <div class="container-xl mb-14" data-aos="fade-up">
+    <span class="eyebrow">Past</span>
+    <h2 class="font-display text-3xl font-bold text-[var(--forest)] mt-3">Past Events</h2>
+  </div>
+  <div class="container-xl grid md:grid-cols-4 gap-6 stagger-grid">
+    <div class="card p-5"><span class="badge-soft mb-3">May 2026</span><h4 class="font-display font-bold text-[var(--forest)]">Summer Health Camp</h4><p class="text-sm text-muted mt-2">Free check-ups for 200+ villagers.</p></div>
+    <div class="card p-5"><span class="badge-soft mb-3">Mar 2026</span><h4 class="font-display font-bold text-[var(--forest)]">Village Cleanliness Week</h4><p class="text-sm text-muted mt-2">Cleared pathways across Chauhag.</p></div>
+    <div class="card p-5"><span class="badge-soft mb-3">Jan 2026</span><h4 class="font-display font-bold text-[var(--forest)]">Winter Ration Distribution</h4><p class="text-sm text-muted mt-2">Essentials delivered to 60 elderly households.</p></div>
+    <div class="card p-5"><span class="badge-soft mb-3">Nov 2025</span><h4 class="font-display font-bold text-[var(--forest)]">Inter-Village Sports Meet</h4><p class="text-sm text-muted mt-2">300+ youth across five villages.</p></div>
+  </div>
+</section>
+
+<footer class="pt-20 pb-8">
+  <div class="container-xl grid md:grid-cols-4 gap-12">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-11 h-11 rounded-full bg-[var(--gold)] flex items-center justify-center font-display font-bold text-[var(--forest)]">YC</span>
+        <span class="text-white font-display font-bold">Youth Club Chauhag</span>
+      </div>
+      <p class="text-sm leading-relaxed">A volunteer youth organisation serving Village Chauhag and neighbouring communities in Shimla, Himachal Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="events.html">Events</a></li><li><a href="gallery.html">Gallery</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Get Involved</h4>
+      <ul class="space-y-2 text-sm"><li><a href="volunteer.html">Volunteer Registration</a></li><li><a href="help.html">Request Help</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm"><li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-[var(--gold)]"></i>Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh - 171211, India</li><li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-[var(--gold)]"></i>chauhagyouths@gmail.com</li></ul>
+    </div>
+  </div>
+  <div class="container-xl border-t border-white/10 mt-14 pt-6 text-xs text-white/50 flex flex-wrap justify-between gap-3">
+    <p>&copy; <span class="current-year"></span> Youth Club Chauhag. All rights reserved.</p>
+    <p>Together We Serve, Together We Grow.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast" role="status"><div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-0.5"></i><p id="toast-msg" class="text-sm text-[var(--charcoal)] font-medium"></p><button id="toast-close" class="ml-auto text-muted"><i class="fa-solid fa-xmark"></i></button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
