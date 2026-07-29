@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="im/logo.png" type="image/png">
+<title>Contact Us | Youth Club Chauhag</title>
+<meta name="description" content="Get in touch with Youth Club Chauhag, Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins','sans-serif'], sans: ['Inter','sans-serif'] }}}}</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="font-sans">
+
+<div id="loader"><div class="loader-rings"><span></span><span></span><span></span></div></div>
+
+<header id="site-nav">
+  <div class="container-xl flex items-center justify-between py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="im/logo.png" alt="Youth Club Chauhag Logo" class="w-14 h-14 object-contain rounded-full bg-white/90 p-1 shadow-sm">
+      <span class="text-white font-display font-bold text-lg leading-tight">Youth Club<br><span class="text-xs font-medium tracking-wide text-white/70">CHAUHAG</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="volunteer.html" class="nav-link">Volunteer</a>
+      <a href="help.html" class="nav-link">Get Help</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="volunteer.html" class="btn btn-gold hidden lg:inline-flex !py-3 !px-6 text-sm">Join Our Club</a>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden flex-col bg-[var(--forest)] px-6 pb-6 gap-1 mobile-menu">
+    <a href="index.html" class="mobile-link nav-link py-2">Home</a>
+    <a href="about.html" class="mobile-link nav-link py-2">About</a>
+    <a href="team.html" class="mobile-link nav-link py-2">Team</a>
+    <a href="events.html" class="mobile-link nav-link py-2">Events</a>
+    <a href="gallery.html" class="mobile-link nav-link py-2">Gallery</a>
+    <a href="volunteer.html" class="mobile-link nav-link py-2">Volunteer</a>
+    <a href="help.html" class="mobile-link nav-link py-2">Get Help</a>
+    <a href="contact.html" class="mobile-link nav-link py-2 active">Contact</a>
+  </div>
+</header>
+
+<section class="pt-40 pb-20" style="background:linear-gradient(160deg,var(--forest), #0A2A20);">
+  <div class="container-xl text-center">
+    <span class="eyebrow justify-center" style="color:var(--leaf)">Reach Us</span>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-white mt-4">Contact Us</h1>
+    <p class="text-white/70 max-w-xl mx-auto mt-4">Questions, partnership ideas, or just want to say hello? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section-pad bg-white">
+  <div class="container-xl grid lg:grid-cols-5 gap-14">
+    <div class="lg:col-span-2 space-y-6" data-aos="fade-right">
+      <div class="card p-6 flex gap-4"><i class="fa-solid fa-location-dot text-xl text-[var(--primary)] mt-1"></i><div><h4 class="font-display font-bold text-[var(--forest)]">Address</h4><p class="text-sm text-muted mt-1">Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh - 171211, India</p></div></div>
+      <div class="card p-6 flex gap-4"><i class="fa-solid fa-envelope text-xl text-[var(--primary)] mt-1"></i><div><h4 class="font-display font-bold text-[var(--forest)]">Email</h4><p class="text-sm text-muted mt-1">chauhagyouths@gmail.com</p></div></div>
+      <div class="card p-6 flex gap-4"><i class="fa-solid fa-share-nodes text-xl text-[var(--primary)] mt-1"></i><div><h4 class="font-display font-bold text-[var(--forest)]">Follow Us</h4><p class="text-sm text-muted mt-2">You can reach out through the contact details above for updates and collaborations.</p></div></div>
+      <div class="rounded-[26px] overflow-hidden shadow-lg h-64">
+        <iframe title="Youth Club Chauhag location map" width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=Chauhag,Marang,Shimla,Himachal+Pradesh+171211,India&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div class="lg:col-span-3" data-aos="fade-left">
+      <form id="contactForm" class="card p-8 md:p-10 space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="form-field"><label for="cName">Full Name *</label><input type="text" id="cName" name="name" required placeholder="Your full name"></div>
+          <div class="form-field"><label for="cEmail">Email *</label><input type="email" id="cEmail" name="email" required placeholder="you@example.com"></div>
+        </div>
+        <div class="form-field"><label for="cPhone">Phone</label><input type="tel" id="cPhone" name="phone" placeholder="10-digit number"></div>
+        <div class="form-field"><label for="cMessage">Message *</label><textarea id="cMessage" name="message" rows="6" required placeholder="Write your message here..."></textarea></div>
+        <button type="submit" class="btn btn-primary w-full justify-center"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="pt-20 pb-8">
+  <div class="container-xl grid md:grid-cols-4 gap-12">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-11 h-11 rounded-full bg-[var(--gold)] flex items-center justify-center font-display font-bold text-[var(--forest)]">YC</span>
+        <span class="text-white font-display font-bold">Youth Club Chauhag</span>
+      </div>
+      <p class="text-sm leading-relaxed">A volunteer youth organisation serving Village Chauhag and neighbouring communities in Shimla, Himachal Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="events.html">Events</a></li><li><a href="gallery.html">Gallery</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Get Involved</h4>
+      <ul class="space-y-2 text-sm"><li><a href="volunteer.html">Volunteer Registration</a></li><li><a href="help.html">Request Help</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm"><li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-[var(--gold)]"></i>Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh - 171211, India</li><li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-[var(--gold)]"></i>chauhagyouths@gmail.com</li></ul>
+    </div>
+  </div>
+  <div class="container-xl border-t border-white/10 mt-14 pt-6 text-xs text-white/50 flex flex-wrap justify-between gap-3">
+    <p>&copy; <span class="current-year"></span> Youth Club Chauhag. All rights reserved.</p>
+    <p>Together We Serve, Together We Grow.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast" role="status"><div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-0.5"></i><p id="toast-msg" class="text-sm text-[var(--charcoal)] font-medium"></p><button id="toast-close" class="ml-auto text-muted"><i class="fa-solid fa-xmark"></i></button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+<script type="module" src="js/firebase-config.js"></script>
+<script type="module" src="js/forms.js"></script>
+</body>
+</html>
