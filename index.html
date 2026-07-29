@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="im/logo.png" type="image/png">
+<title>Youth Club Chauhag | Together We Serve, Together We Grow</title>
+<meta name="description" content="Youth Club Chauhag is a volunteer-run youth organisation in Village Chauhag, Shimla, Himachal Pradesh, working on village development, blood donation, education, environment and disaster relief.">
+<meta name="theme-color" content="#0F3D2E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: {
+    display: ['Poppins','sans-serif'], sans: ['Inter','sans-serif']
+  }}}}
+</script>
+<!-- Custom -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="font-sans">
+
+<!-- Loader -->
+<div id="loader"><div class="loader-rings"><span></span><span></span><span></span></div></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="site-nav">
+  <div class="container-xl flex items-center justify-between py-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="im/logo.png" alt="Youth Club Chauhag Logo" class="w-14 h-14 object-contain rounded-full bg-white/90 p-1 shadow-sm">
+      <span class="text-white font-display font-bold text-lg leading-tight">Youth Club<br><span class="text-xs font-medium tracking-wide text-white/70">CHAUHAG</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="volunteer.html" class="nav-link">Volunteer</a>
+      <a href="help.html" class="nav-link">Get Help</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="volunteer.html" class="btn btn-gold hidden lg:inline-flex !py-3 !px-6 text-sm">Join Our Club</a>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden flex-col bg-[var(--forest)] px-6 pb-6 gap-1 mobile-menu">
+    <a href="index.html" class="mobile-link nav-link py-2 active">Home</a>
+    <a href="about.html" class="mobile-link nav-link py-2">About</a>
+    <a href="team.html" class="mobile-link nav-link py-2">Team</a>
+    <a href="events.html" class="mobile-link nav-link py-2">Events</a>
+    <a href="gallery.html" class="mobile-link nav-link py-2">Gallery</a>
+    <a href="volunteer.html" class="mobile-link nav-link py-2">Volunteer</a>
+    <a href="help.html" class="mobile-link nav-link py-2">Get Help</a>
+    <a href="contact.html" class="mobile-link nav-link py-2">Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1920&auto=format&fit=crop');">
+  <svg class="peaks peaks-back" viewBox="0 0 1440 220" preserveAspectRatio="none" style="height:200px;"><polygon points="0,220 0,120 180,70 360,140 560,50 760,130 980,60 1200,150 1440,90 1440,220" fill="#0c2c22" opacity="0.55"/></svg>
+  <svg class="peaks peaks-front" viewBox="0 0 1440 180" preserveAspectRatio="none" style="height:140px;"><polygon points="0,180 0,90 220,140 420,60 640,120 860,40 1080,110 1300,70 1440,120 1440,180" fill="#081d16" opacity="0.85"/></svg>
+
+  <div class="hero-content container-xl pb-24 pt-40">
+    <span class="hero-badge badge-soft bg-white/15 text-white border border-white/25 backdrop-blur mb-6"><i class="fa-solid fa-mountain-sun text-[var(--gold)]"></i> Village Chauhag · Shimla · Himachal Pradesh</span>
+    <h1 class="hero-title font-display">
+      <span class="line block">Together We Serve,</span>
+      <span class="line block">Together We <span class="accent">Grow.</span></span>
+    </h1>
+    <p class="hero-sub text-white/85 text-lg max-w-xl mt-6 leading-relaxed">A youth-led movement from the hills of Himachal — building a healthier, educated and self-reliant Chauhag through service, one initiative at a time.</p>
+    <div class="flex flex-wrap gap-4 mt-9">
+      <a href="volunteer.html" class="btn btn-primary hero-cta"><i class="fa-solid fa-hand-fist"></i> Join Our Club</a>
+      <a href="about.html" class="btn btn-ghost hero-cta"><i class="fa-solid fa-seedling"></i> View Activities</a>
+    </div>
+  </div>
+  <div class="hero-scroll absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/70 text-xs flex flex-col items-center gap-2">
+    <span class="tracking-widest">SCROLL</span><i class="fa-solid fa-chevron-down anim-float"></i>
+  </div>
+</section>
+
+<!-- ============ INTRO STRIP ============ -->
+<section class="section-pad bg-[var(--cream)]">
+  <div class="container-xl grid lg:grid-cols-2 gap-14 items-center">
+    <div data-aos="fade-right">
+      <span class="eyebrow">Who We Are</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mt-4 leading-tight">A club of young people, working for their village and beyond.</h2>
+      <p class="text-muted mt-5 leading-relaxed">Youth Club Chauhag was formed by a small group of local youth who believed that real change starts at home — in the village, on the school road, at the health camp, and in the smallest acts of kindness toward neighbours. Today the club runs education, health, environment and welfare programs across Chauhag and neighbouring villages, powered entirely by volunteers.</p>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-1"></i><span class="text-sm font-medium">100% Volunteer Run</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-1"></i><span class="text-sm font-medium">Community First</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-1"></i><span class="text-sm font-medium">Transparent Funding</span></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-1"></i><span class="text-sm font-medium">Open to All Youth</span></div>
+      </div>
+      <a href="about.html" class="btn btn-outline mt-9"><i class="fa-solid fa-arrow-right"></i> Read Our Full Story</a>
+    </div>
+    <div class="relative" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=1000&auto=format&fit=crop" alt="Volunteers of Youth Club Chauhag working together" class="rounded-[26px] shadow-2xl w-full object-cover h-[420px]">
+      <div class="glass absolute -bottom-8 -left-6 md:-left-10 rounded-2xl p-5 w-56 shadow-xl">
+        <p class="font-display font-bold text-3xl text-[var(--forest)]" style="color:#0F3D2E">150+</p>
+        <p class="text-xs text-[var(--forest)] font-semibold mt-1">Active volunteers serving Chauhag &amp; nearby villages</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section class="section-pad bg-white">
+  <div class="container-xl text-center max-w-2xl mx-auto" data-aos="fade-up">
+    <span class="eyebrow justify-center">Our Mission</span>
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mt-4">Nine commitments that guide every activity we run.</h2>
+  </div>
+  <div class="container-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14 stagger-grid">
+    <!-- mission cards -->
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-hands-holding-child"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Help Everyone</h3><p class="text-muted text-sm mt-2">Standing with anyone in need, regardless of background.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-people-group"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Serve Society</h3><p class="text-muted text-sm mt-2">Consistent, hands-on service across every corner of Chauhag.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-leaf"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Protect Nature</h3><p class="text-muted text-sm mt-2">Plantation drives and clean-up campaigns for the hills we call home.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-house-chimney"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Develop Village</h3><p class="text-muted text-sm mt-2">Better roads, sanitation and public spaces for every household.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-book-open-reader"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Educate Children</h3><p class="text-muted text-sm mt-2">Free tuition and learning material for children who need it most.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-fire"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Empower Youth</h3><p class="text-muted text-sm mt-2">Skill-building and leadership opportunities for young people.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-wheat-awn"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Support Farmers</h3><p class="text-muted text-sm mt-2">Working alongside local farmers on shared community land.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-venus"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Support Women</h3><p class="text-muted text-sm mt-2">Skill and awareness programs that build independence.</p></div>
+    <div class="mission-card"><div class="mission-icon"><i class="fa-solid fa-futbol"></i></div><h3 class="font-display font-bold text-lg mt-5 text-[var(--forest)]">Promote Sports</h3><p class="text-muted text-sm mt-2">Tournaments and training that keep youth active and united.</p></div>
+  </div>
+</section>
+
+<!-- ============ VISION + DREAMS ============ -->
+<section class="section-pad" style="background:var(--forest);">
+  <div class="container-xl grid lg:grid-cols-5 gap-16">
+    <div class="lg:col-span-2" data-aos="fade-right">
+      <span class="eyebrow" style="color:var(--leaf)">Our Vision</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white mt-4 leading-tight">A beautiful future where every youth works together for society.</h2>
+      <p class="text-white/70 mt-5 leading-relaxed">We imagine a Chauhag where no family is left without support, where every child studies under a working light, and where the hills we love stay green for generations after us.</p>
+      <div class="ring-mark mt-10 ml-6 hidden lg:block">
+        <svg width="180" height="180" viewBox="0 0 180 180" class="opacity-60">
+          <circle cx="90" cy="90" r="30" fill="none" stroke="#C9962E" stroke-width="1.5"/>
+          <circle cx="90" cy="90" r="55" fill="none" stroke="#8FD3A0" stroke-width="1.2"/>
+          <circle cx="90" cy="90" r="80" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+    <div class="lg:col-span-3" data-aos="fade-left">
+      <span class="eyebrow" style="color:var(--leaf)">Our Dreams</span>
+      <h3 class="font-display text-2xl font-bold text-white mt-3 mb-7">What we're building toward</h3>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-book text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Build a Community Library</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-futbol text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">A Proper Sports Ground</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-broom text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Complete Village Cleanliness</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-screwdriver-wrench text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Skill Development Centre</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-graduation-cap text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Free Education for All</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-kit-medical text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Regular Health Camps</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-droplet text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">A Standing Blood Donor Network</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-truck-medical text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Emergency Response Team</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-tree text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Plant 1,000 Trees</span></div>
+        <div class="glass rounded-2xl p-5 flex items-start gap-3"><i class="fa-solid fa-house-circle-check text-[var(--gold)] mt-1"></i><span class="text-white/90 text-sm">Help Every Needy Family</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section-pad bg-[var(--leaf-mist)]">
+  <div class="container-xl text-center max-w-2xl mx-auto" data-aos="fade-up">
+    <span class="eyebrow justify-center">What We Do</span>
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mt-4">Our Services</h2>
+  </div>
+  <div class="container-xl grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 stagger-grid">
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-droplet text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Blood Donation</h4><p class="text-sm text-muted mt-2">Regular camps with local hospitals.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-tree text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Tree Plantation</h4><p class="text-sm text-muted mt-2">Reforesting village common land.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-road text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Road Cleaning</h4><p class="text-sm text-muted mt-2">Keeping village pathways clear and safe.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-city text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Village Beautification</h4><p class="text-sm text-muted mt-2">Painting, signage and public spaces.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-house-flood-water text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Disaster Relief</h4><p class="text-sm text-muted mt-2">Rapid response during floods and landslides.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-graduation-cap text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Education Support</h4><p class="text-sm text-muted mt-2">Free tuition, books and school supplies.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-volleyball text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Sports</h4><p class="text-sm text-muted mt-2">Tournaments that build teamwork and health.</p></div>
+    <div class="card p-7" data-aos="zoom-in"><i class="fa-solid fa-masks-theater text-2xl text-[var(--primary)]"></i><h4 class="font-display font-bold mt-4 text-[var(--forest)]">Culture</h4><p class="text-sm text-muted mt-2">Celebrating local festivals and traditions.</p></div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section-pad" style="background:linear-gradient(160deg,var(--forest) 0%, #0A2A20 100%);">
+  <div class="container-xl text-center mb-14" data-aos="fade-up">
+    <span class="eyebrow justify-center" style="color:var(--leaf)">Our Impact</span>
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-white mt-4">Achievements So Far</h2>
+  </div>
+  <div class="container-xl grid grid-cols-2 lg:grid-cols-5 gap-8">
+    <div class="flex flex-col items-center" data-aos="zoom-in">
+      <div class="stat-ring" data-count="9" data-percent="90"><svg><circle class="track" cx="75" cy="75" r="66"/><circle class="fill" cx="75" cy="75" r="66"/></svg><div class="stat-num">0</div></div>
+      <p class="text-white/75 text-sm mt-3 text-center">Years of Service</p>
+    </div>
+    <div class="flex flex-col items-center" data-aos="zoom-in">
+      <div class="stat-ring" data-count="120" data-percent="100"><svg><circle class="track" cx="75" cy="75" r="66"/><circle class="fill" cx="75" cy="75" r="66"/></svg><div class="stat-num">0</div></div>
+      <p class="text-white/75 text-sm mt-3 text-center">Events Completed</p>
+    </div>
+    <div class="flex flex-col items-center" data-aos="zoom-in">
+      <div class="stat-ring" data-count="1000" data-percent="80"><svg><circle class="track" cx="75" cy="75" r="66"/><circle class="fill" cx="75" cy="75" r="66"/></svg><div class="stat-num">0</div></div>
+      <p class="text-white/75 text-sm mt-3 text-center">Trees Planted</p>
+    </div>
+    <div class="flex flex-col items-center" data-aos="zoom-in">
+      <div class="stat-ring" data-count="150" data-percent="95"><svg><circle class="track" cx="75" cy="75" r="66"/><circle class="fill" cx="75" cy="75" r="66"/></svg><div class="stat-num">0</div></div>
+      <p class="text-white/75 text-sm mt-3 text-center">Volunteers</p>
+    </div>
+    <div class="flex flex-col items-center col-span-2 lg:col-span-1" data-aos="zoom-in">
+      <div class="stat-ring" data-count="3000" data-percent="100"><svg><circle class="track" cx="75" cy="75" r="66"/><circle class="fill" cx="75" cy="75" r="66"/></svg><div class="stat-num">0</div></div>
+      <p class="text-white/75 text-sm mt-3 text-center">People Helped</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM PREVIEW ============ -->
+<section class="section-pad bg-white">
+  <div class="container-xl flex flex-wrap items-end justify-between gap-6 mb-10" data-aos="fade-up">
+    <div>
+      <span class="eyebrow">Meet The Team</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mt-4">The People Behind Chauhag's Change</h2>
+    </div>
+    <a href="team.html" class="btn btn-outline">View Full Team <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="container-xl" data-aos="fade-up">
+    <div class="mb-8">
+      <span class="eyebrow">Leadership</span>
+      <h3 class="font-display text-2xl font-bold text-[var(--forest)] mt-3">Club Leadership</h3>
+      <p class="text-muted mt-3 max-w-2xl">The current leadership team of Youth Club Chauhag is listed below.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7" id="teamPreview">
+      <div class="team-card" data-aos="fade-up">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">NS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Nitanshul Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">President</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">DS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Diwaker Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Vice President</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">HA</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Hanta Arush</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Secretary</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">AS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Aarush Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Media Incharge / Website Handler</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">SS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Suraj Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Treasurer</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">NS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Nishant Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Consultant</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="480">
+        <div class="team-photo flex items-center justify-center bg-[var(--leaf-mist)] text-[var(--forest)] font-display font-bold text-xl">SS</div>
+        <h3 class="font-display font-bold text-[var(--forest)] mt-4">Starish Sharma</h3>
+        <p class="text-[var(--gold-d)] text-sm font-semibold">Second Consultant</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY PREVIEW ============ -->
+<section class="section-pad bg-[var(--leaf-mist)]">
+  <div class="container-xl flex flex-wrap items-end justify-between gap-6 mb-14" data-aos="fade-up">
+    <div>
+      <span class="eyebrow">Moments Captured</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-[var(--forest)] mt-4">From the Field</h2>
+    </div>
+    <a href="gallery.html" class="btn btn-outline">Full Gallery <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="container-xl grid grid-cols-2 lg:grid-cols-4 gap-5">
+    <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=600&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full" alt="Volunteers cleaning village road">
+    <img data-aos="zoom-in" data-aos-delay="80" src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=600&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full" alt="Youth club meeting">
+    <img data-aos="zoom-in" data-aos-delay="160" src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=600&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full" alt="Blood donation camp">
+    <img data-aos="zoom-in" data-aos-delay="240" src="https://images.unsplash.com/photo-1547483238-2cbf881a559f?q=80&w=600&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full" alt="Tree plantation drive">
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section-pad" style="background:var(--primary);">
+  <div class="container-xl text-center max-w-2xl mx-auto" data-aos="zoom-in">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-white">Ready to give your time to something meaningful?</h2>
+    <p class="text-white/85 mt-4">Whether it's an hour on a Sunday or a full season of service — there's a place for you at Youth Club Chauhag.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-8">
+      <a href="volunteer.html" class="btn btn-gold"><i class="fa-solid fa-hand-fist"></i> Become a Volunteer</a>
+      <a href="help.html" class="btn btn-ghost"><i class="fa-solid fa-hand-holding-heart"></i> Request Help</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="pt-20 pb-8">
+  <div class="container-xl grid md:grid-cols-4 gap-12">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-11 h-11 rounded-full bg-[var(--gold)] flex items-center justify-center font-display font-bold text-[var(--forest)]">YC</span>
+        <span class="text-white font-display font-bold">Youth Club Chauhag</span>
+      </div>
+      <p class="text-sm leading-relaxed">A volunteer youth organisation serving Village Chauhag and neighbouring communities in Shimla, Himachal Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Get Involved</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="volunteer.html">Volunteer Registration</a></li>
+        <li><a href="help.html">Request Help</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-[var(--gold)]"></i>Village Chauhag, Post Office Marang, Shimla, Himachal Pradesh - 171211, India</li>
+        <li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-[var(--gold)]"></i>chauhagyouths@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-xl border-t border-white/10 mt-14 pt-6 text-xs text-white/50 flex flex-wrap justify-between gap-3">
+    <p>&copy; <span class="current-year"></span> Youth Club Chauhag. All rights reserved.</p>
+    <p>Together We Serve, Together We Grow.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div id="toast" role="status"><div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-[var(--primary)] mt-0.5"></i><p id="toast-msg" class="text-sm text-[var(--charcoal)] font-medium"></p><button id="toast-close" class="ml-auto text-muted"><i class="fa-solid fa-xmark"></i></button></div></div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
