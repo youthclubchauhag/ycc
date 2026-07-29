@@ -1,44 +1,29 @@
 /* =========================================================
-   GALLERY.JS — category filter + lightbox
-   To add photos later: just push new objects into GALLERY_DATA
-   below (admin-friendly, no HTML editing required).
+   GALLERY.JS — simple image gallery + lightbox
 ========================================================= */
 
 const GALLERY_DATA = [
-  { src: "images/gallery/meeting-1.jpg", category: "meetings",       caption: "Monthly planning meeting at the community hall" },
-  { src: "images/gallery/event-1.jpg",   category: "events",         caption: "Annual foundation day celebration" },
-  { src: "images/gallery/sports-1.jpg",  category: "sports",         caption: "Inter-village volleyball tournament" },
-  { src: "images/gallery/village-1.jpg", category: "village",        caption: "Village cleanliness drive, Chauhag" },
-  { src: "images/gallery/nature-1.jpg",  category: "nature",         caption: "Morning view of the Himalayan ridgeline" },
-  { src: "images/gallery/blood-1.jpg",   category: "blood-donation", caption: "Blood donation camp with local health centre" },
-  { src: "images/gallery/tree-1.jpg",    category: "tree-plantation",caption: "Sapling plantation along the school road" },
-  { src: "images/gallery/edu-1.jpg",     category: "education",      caption: "Free evening tuition for children" },
-  { src: "images/gallery/social-1.jpg",  category: "social-work",    caption: "Ration distribution to elderly residents" },
-  { src: "images/gallery/meeting-2.jpg", category: "meetings",       caption: "Executive committee review session" },
-  { src: "images/gallery/event-2.jpg",   category: "events",         caption: "Cultural evening during the harvest festival" },
-  { src: "images/gallery/sports-2.jpg",  category: "sports",         caption: "Youth cricket league finals" },
+  { src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=900&auto=format&fit=crop", caption: "Youth club meeting at the community hall" },
+  { src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=900&auto=format&fit=crop", caption: "Community event and cultural gathering" },
+  { src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=900&auto=format&fit=crop", caption: "Sports activity in the village" },
+  { src: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=900&auto=format&fit=crop", caption: "Village cleanliness drive" },
+  { src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=900&auto=format&fit=crop", caption: "Nature and hillside landscape" },
+  { src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=900&auto=format&fit=crop", caption: "Blood donation camp support" },
+  { src: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900&auto=format&fit=crop", caption: "Tree plantation drive" },
+  { src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=900&auto=format&fit=crop", caption: "Education support session" },
+  { src: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=900&auto=format&fit=crop", caption: "Social work and helping hands" },
+  { src: "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=900&auto=format&fit=crop", caption: "Community gathering and teamwork" },
+  { src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=900&auto=format&fit=crop", caption: "Village program in action" },
+  { src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=900&auto=format&fit=crop", caption: "Youth participation in local activities" },
 ];
 
-const CATEGORY_LABELS = {
-  all: "All", meetings: "Meetings", events: "Events", sports: "Sports",
-  village: "Village", nature: "Nature", "blood-donation": "Blood Donation",
-  "tree-plantation": "Tree Plantation", education: "Education", "social-work": "Social Work"
-};
-
-function renderGallery(filter = "all"){
+function renderGallery(){
   const grid = document.getElementById("galleryGrid");
   if(!grid) return;
-  const items = filter === "all" ? GALLERY_DATA : GALLERY_DATA.filter(i => i.category === filter);
 
-  grid.innerHTML = items.map((item, idx) => `
-    <div class="gallery-item" data-reveal data-index="${GALLERY_DATA.indexOf(item)}">
+  grid.innerHTML = GALLERY_DATA.map((item, idx) => `
+    <div class="gallery-item" data-reveal data-index="${idx}">
       <img src="${item.src}" alt="${item.caption}" loading="lazy">
-      <div class="gallery-overlay">
-        <div>
-          <span class="badge-soft mb-2">${CATEGORY_LABELS[item.category] || item.category}</span>
-          <p class="text-white text-sm font-medium">${item.caption}</p>
-        </div>
-      </div>
     </div>
   `).join("");
 
@@ -68,15 +53,7 @@ function navLightbox(dir){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderGallery("all");
-
-  document.querySelectorAll(".filter-pill").forEach(pill => {
-    pill.addEventListener("click", () => {
-      document.querySelectorAll(".filter-pill").forEach(p => p.classList.remove("active"));
-      pill.classList.add("active");
-      renderGallery(pill.dataset.filter);
-    });
-  });
+  renderGallery();
 
   document.getElementById("lightboxClose")?.addEventListener("click", closeLightbox);
   document.getElementById("lightboxNext")?.addEventListener("click", () => navLightbox(1));
